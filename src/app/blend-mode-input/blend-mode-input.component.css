@@ -1,0 +1,14 @@
+.blend-mode-container {
+  display: flex;
+  margin: 0.5em 0 1em 0;
+  align-items: center;
+}
+
+select {
+  background-color: var(--accent-color);
+  border: 1px solid var(--user-selected-color);
+}
+
+select:hover {
+  box-shadow: 0 0 1px 1px var(--user-selected-color);
+}

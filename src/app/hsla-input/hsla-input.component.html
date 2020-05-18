@@ -1,0 +1,25 @@
+<div [formGroup]="form" class="form-container">
+  <div class="flex-row-container align-center">
+		<label for="hue" class="flex-item-one">Hue: </label>
+		<input id="hue" type="range" min="0" max="360" formControlName="hue"
+    class="flex-item-two">
+  </div>
+
+	<div class="flex-row-container align-center">
+		<label for="saturation" class="flex-item-one">Saturation: </label>
+		<input id="saturation" type="range" min="0" max="100" formControlName="saturation"
+    class="flex-item-two">
+  </div>
+
+	<div class="flex-row-container align-center">
+		<label for="lightness" class="flex-item-one">Lightness: </label>
+		<input id="lightness" type="range" min="0" max="100" formControlName="lightness"
+    class="flex-item-two">
+  </div>
+
+	<div class="flex-row-container align-center">
+		<label for="opacity" class="flex-item-one">Opacity: </label>
+		<input id="opacity" type="range" min="0" max="1" step="0.1" formControlName="opacity"
+    class="flex-item-two">
+  </div>
+</div>

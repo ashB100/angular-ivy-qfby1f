@@ -1,0 +1,9 @@
+<div [formGroup]="form" class="blend-mode-container">
+  <label class="flex-item-one">Blend mode:</label>
+	
+  <select formControlName="mode" class="flex-item-two">
+    <option *ngFor="let blendMode of blendModeOptions" [ngValue]="blendMode">
+      {{ blendMode }}
+    </option>
+  </select>
+</div>

@@ -1,0 +1,79 @@
+:host {
+  display: block;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1546771139-8ecff7cdabc0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: var(--user-selected-color);
+  background-blend-mode: var(--background-blend-mode);
+}
+
+main {
+  --max-width: 300px;
+  --accent-color: hsla(
+    calc(var(--hue) + 180), 
+    var(--saturation), 
+    var(--lightness),
+    var(--opacity));
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  left: calc(100vw/2 - var(--max-width)/2);
+  padding: 1em;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 10px;
+  width: 80%;
+  max-width: var(--max-width);
+}
+
+.color-demo-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  height: 3em;
+  border-radius: 5px;
+  border: 2px solid var(--user-selected-color);
+}
+
+.color-demo {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background-color: var(--user-selected-color);
+  margin: 0 0.5em;
+}
+
+.color-text {
+  width: 80%;
+}
+
+@media(max-width: 300px) {
+  :host {
+    background-size: cover;
+  }
+
+  main {
+    font-size: 0.9em;
+    min-width: 200px;
+  }
+}
+
+@media(orientation: landscape) and (max-height: 460px) {
+
+  :host {
+    background-size: 100vh auto;
+  }
+
+  main {
+    left: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+  em {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,26 @@
+<header>
+    <h1>Dynamic styling</h1>
+    <em>With CSS custom properties</em>
+</header>
+
+<main [style.--hue]="hue"
+  [style.--saturation.%]="saturation"
+  [style.--lightness.%]="lightness"
+  [style.--opacity]="opacity"
+  [style.--background-blend-mode]="backgroundBlendMode"
+  >
+
+  <form [formGroup]="form">
+    <app-hsla-input formControlName="hsla"></app-hsla-input>
+
+    <app-blend-mode-input formControlName="backgroundBlendMode"></app-blend-mode-input>
+  </form>
+
+  <div class="color-demo-container">
+    <div class="color-demo"></div>
+    <div class="color-text">hsla({{ hue }}, {{ saturation }}, {{ lightness }}, {{ opacity }})</div>
+  </div>
+</main>
+
+<footer>
+</footer>
