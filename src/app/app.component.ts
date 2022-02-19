@@ -1,5 +1,5 @@
-import { Component, Input, HostBinding } from '@angular/core';
-import { FormBuilder, FormGroup, ControlContainer, NgForm } from '@angular/forms';
+import { Component, HostBinding } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'my-app',

@@ -1,4 +1,4 @@
-import { Component, OnInit, forwardRef, ElementRef, ViewChild } from '@angular/core';
+import { Component, forwardRef } from '@angular/core';
 
 import { FormControl, NG_VALUE_ACCESSOR, ControlValueAccessor, FormGroup } from '@angular/forms';
 

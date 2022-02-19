@@ -1,5 +1,5 @@
 import { Component, forwardRef } from '@angular/core';
-import { ControlContainer, ControlValueAccessor, FormGroup, FormControl, NG_VALUE_ACCESSOR, NgControl, NgForm } from '@angular/forms';
+import { ControlValueAccessor, FormGroup, FormControl, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
   selector: 'app-hsla-input',
